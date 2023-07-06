@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ body {
 }
 
 body * {
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   color: var(--text-color);
 }
 
@@ -104,7 +104,7 @@ body * {
 
 /* links */
 
-ul{
+ul {
   list-style: none;
 
   display: flex;
@@ -175,4 +175,16 @@ footer a {
 
 footer a:hover {
   background: rgba(45, 159, 226, 0.2);
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assests/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
